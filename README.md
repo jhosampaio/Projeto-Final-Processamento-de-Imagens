@@ -2,10 +2,17 @@
 ## Projeto de Extração e Classificação de Características em Imagens
 O projeto será composto pela implementação de script Python para classificação de imagens raio-X dividias em duas classes: covid e normal.
 
-# Hu Moments Image Classifier
+# Equipe: Jhonatan Sampaio
 
 Este é um script em Python para processamento de imagens usando momentos de Hu e classificação com um classificador SVM. O script é projetado para trabalhar com conjuntos de dados divididos em conjuntos de treinamento e teste.
 
+# Momentos de Hu
+Os momentos de Hu são descritores de forma invariantes a rotação, escala e translação de uma imagem. Eles são derivados dos momentos estatísticos da imagem e são amplamente utilizados em processamento de imagem para caracterizar a forma de objetos. Os momentos de Hu capturam informações sobre a distribuição espacial de intensidades na imagem e são especialmente úteis para representar características globais da forma.
+
+No contexto deste projeto, os momentos de Hu são extraídos de imagens para criar um conjunto de características que serve como entrada para um classificador SVM (Support Vector Machine). Este classificador é treinado para reconhecer padrões nos momentos de Hu e, posteriormente, é utilizado para classificar imagens de teste.
+
+Referências
+Hu, M. K. "Visual Pattern Recognition by Moment Invariants." (1962)
 ## Requisitos
 
 - Python 3
